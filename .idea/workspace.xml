@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15283159-589b-4b8e-adc7-c6c6d9438c04" name="Changes" comment="REST @GET for list and single Employee">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="15283159-589b-4b8e-adc7-c6c6d9438c04" name="Changes" comment="REST Exception handling">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/controller/MyRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/controller/MyRESTController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660147981020</updated>
-      <workItem from="1660147982321" duration="5436000" />
+      <workItem from="1660147982321" duration="5771000" />
     </task>
     <task id="LOCAL-00001" summary="REST @GET for list and single Employee">
       <created>1660151760903</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660151760903</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="REST Exception handling">
+      <created>1660154530631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660154530631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +203,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="REST @GET for list and single Employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST @GET for list and single Employee" />
+    <MESSAGE value="REST Exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST Exception handling" />
   </component>
 </project>
