@@ -38,4 +38,13 @@ public class MyRESTController {
         employeeService.saveEmployee(employee);
         return employee;
     }
+
+//    @PutMapping("/employees")
+    @RequestMapping(value = "/employees",
+                    produces = "application/json",
+                    method = RequestMethod.PUT)
+    public Employee updateEmployee(@RequestBody Employee employee){
+        employeeService.saveEmployee(employee);
+        return employee;
+    }
 }
