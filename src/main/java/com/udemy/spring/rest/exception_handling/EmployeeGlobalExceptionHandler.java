@@ -10,7 +10,7 @@ public class EmployeeGlobalExceptionHandler {
 
 
     @ExceptionHandler
-    public ResponseEntity<EmployeeIncorrectData> handleException(NoSuckEmployeeException exception){
+    public ResponseEntity<EmployeeIncorrectData> handleException(NoSuchEmployeeException exception){
         EmployeeIncorrectData data = new EmployeeIncorrectData();
         data.setInfo(exception.getMessage());
 

@@ -1,7 +1,7 @@
 package com.udemy.spring.rest.controller;
 
 import com.udemy.spring.rest.entity.Employee;
-import com.udemy.spring.rest.exception_handling.NoSuckEmployeeException;
+import com.udemy.spring.rest.exception_handling.NoSuchEmployeeException;
 import com.udemy.spring.rest.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +27,7 @@ public class MyRESTController {
         Employee employee = employeeService.getEmployee(id);
 
         if (employee==null) {
-            throw new NoSuckEmployeeException("There is no employee with ID = " + id + " in DataBase");
+            throw new NoSuchEmployeeException("There is no employee with ID = " + id + " in DataBase");
         }
 
         return employee;
@@ -46,5 +46,17 @@ public class MyRESTController {
     public Employee updateEmployee(@RequestBody Employee employee){
         employeeService.saveEmployee(employee);
         return employee;
+    }
+
+//    @DeleteMapping("/employees/{id}")
+    @RequestMapping(value = "/employees/{id}", method = RequestMethod.DELETE)
+    public String deleteEmployee(@PathVariable int id){
+
+        Employee employee = employeeService.getEmployee(id);
+        if (employee==null) throw new NoSuchEmployeeException("No Employee with such ID in DataBase");
+
+        employeeService.deleteEmployee(id);
+
+        return "Employee with id = " + id + " was deleted.";
     }
 }
