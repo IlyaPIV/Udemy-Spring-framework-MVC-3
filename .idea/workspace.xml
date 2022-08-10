@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15283159-589b-4b8e-adc7-c6c6d9438c04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="15283159-589b-4b8e-adc7-c6c6d9438c04" name="Changes" comment="REST @GET for list and single Employee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/configuration/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/controller/MyRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udemy/spring/rest/controller/MyRESTController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,8 +169,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660147981020</updated>
-      <workItem from="1660147982321" duration="3590000" />
+      <workItem from="1660147982321" duration="5436000" />
     </task>
+    <task id="LOCAL-00001" summary="REST @GET for list and single Employee">
+      <created>1660151760903</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660151760903</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,5 +194,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="REST @GET for list and single Employee" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST @GET for list and single Employee" />
   </component>
 </project>

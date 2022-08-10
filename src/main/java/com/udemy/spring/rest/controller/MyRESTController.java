@@ -1,12 +1,10 @@
 package com.udemy.spring.rest.controller;
 
 import com.udemy.spring.rest.entity.Employee;
+import com.udemy.spring.rest.exception_handling.NoSuckEmployeeException;
 import com.udemy.spring.rest.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,7 +24,13 @@ public class MyRESTController {
 
     @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id){
-        return employeeService.getEmployee(id);
+        Employee employee = employeeService.getEmployee(id);
+
+        if (employee==null) {
+            throw new NoSuckEmployeeException("There is no employee with ID = " + id + " in DataBase");
+        }
+
+        return employee;
     }
 
 }
